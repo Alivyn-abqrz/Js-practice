@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Variablet</title>
 </head>
 <body>
-    
+   <h1>Cart Quantity</h1> <br>
+    <button onclick="
+    console.log(`Cart Quantity: ${cartQuality}`)
+    ">Show Quality</button>
+
+    <button onclick="
+    cartQuality+=1;
+    console.log(`Cart Quantity: ${cartQuality}`)
+    ">Add to cart</button>
+
+    <button  onclick="
+    cartQuality+=2;
+    console.log(`Cart Quantity: ${cartQuality}`)
+    ">+2</button>
+
+    <button onclick="
+    cartQuality+=3;
+    console.log(`Cart Quantity: ${cartQuality}`)
+    ">+3</button>
+
+    <button onclick="
+    cartQuality=0;
+    console.log(`${cartReset}`)
+    console.log(`Cart Quantity: ${cartQuality}`)
+    ">Reset Cart</button>
+
 </body>
-<script src="jsprac3.js"></script>
+    <script >
+        let cartQuality =0;
+        let cartReset="Cart was reset."
+
+    </script>
 </html>
